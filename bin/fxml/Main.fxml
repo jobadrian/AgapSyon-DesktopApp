@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right, #FFEDCC, #BFCFFF);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainC">
+   <children>
+      <ImageView fitHeight="500.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fitWidth="135.0" layoutX="58.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.png" />
+         </image>
+      </ImageView>
+      <Button focusTraversable="false" layoutX="58.0" layoutY="406.0" mnemonicParsing="false" onAction="#switchToAdminLogin" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: #709BCD;" text="Admin">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7490196228027344" green="0.8117647171020508" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="58.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToUserSignin" prefHeight="36.0" prefWidth="142.0" style="-fx-background-color: FFD95F;" text="User">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.929411768913269" blue="0.800000011920929" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="43.0" layoutY="154.0" prefHeight="107.0" prefWidth="174.0" text="AgapSyon: Paghahanda at Pag-aksyon sa  mga Sakuna" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
