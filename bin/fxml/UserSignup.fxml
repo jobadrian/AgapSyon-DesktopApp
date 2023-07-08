@@ -43,7 +43,7 @@
             <Label layoutX="29.0" layoutY="213.0" prefHeight="17.0" prefWidth="237.0" text="Password" />
             <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="27.0" layoutY="230.0" prefHeight="25.0" prefWidth="237.0" />
             <Label layoutX="29.0" layoutY="263.0" prefHeight="17.0" prefWidth="237.0" text="Confirm Password" />
-            <PasswordField fx:id="textPasswordConfirm" focusTraversable="false" layoutX="27.0" layoutY="282.0" prefHeight="25.0" prefWidth="237.0" />
+            <PasswordField fx:id="txtPasswordConfirm" focusTraversable="false" layoutX="27.0" layoutY="282.0" prefHeight="25.0" prefWidth="237.0" />
             <Button focusTraversable="false" layoutX="27.0" layoutY="319.0" mnemonicParsing="false" onAction="#switchToUserDashboard" prefHeight="36.0" prefWidth="237.0" style="-fx-background-color: #709BCD;" text="Login">
                <effect>
                   <DropShadow>
