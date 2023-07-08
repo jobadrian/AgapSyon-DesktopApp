@@ -1,11 +1,11 @@
 package controllers;
 
 import java.io.IOException;
-import components.SwitchScene;
+import components.SwitchSceneActionEvent;
 import javafx.event.ActionEvent;
 
 public class MainC {
-	SwitchScene goTo = new SwitchScene();
+	SwitchSceneActionEvent goTo = new SwitchSceneActionEvent();
 	
 	public void switchToUserSignin(ActionEvent event) throws IOException {
 		goTo.switchScene(event, "/fxml/UserSignin.fxml","User Login Section");

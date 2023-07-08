@@ -2,21 +2,26 @@ package controllers;
 
 import java.io.IOException;
 
-import components.SwitchScene;
+import javax.swing.JOptionPane;
+
+import components.SwitchSceneActionEvent;
 import database.UserData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 public class UserSignupC {
-	SwitchScene goTo = new SwitchScene();
+	SwitchSceneActionEvent goTo = new SwitchSceneActionEvent();
 	UserData user = new UserData();
 	@FXML 
 	private TextField txtName, txtContactNum, txtAddress, txtBirthday, txtPassword, txtPasswordConfirm;
+	String password, passwordConfirm;
 	
 	public void switchToUserDashboard(ActionEvent event) throws IOException {
 		insertData();
-		goTo.switchScene(event, "/fxml/UserDashboard.fxml","User Dashboard Section");
+		
+		if(password.equals(passwordConfirm))
+			goTo.switchScene(event, "/fxml/UserSignin.fxml","User Signin Section");
 	}
 	
 	public void insertData() {
@@ -24,10 +29,12 @@ public class UserSignupC {
 		String contactNum = txtContactNum.getText();
 		String address = txtAddress.getText();
 		String birthday = txtBirthday.getText();
-		String password = txtPassword.getText(); //Temporary(Add confirmation is password match)
+		password = txtPassword.getText(); 
+		passwordConfirm = txtPasswordConfirm.getText();
 	
-		user.insertUserData(name, contactNum, address, birthday, password);
+		if(password.equals(passwordConfirm))
+			user.insertUserData(name, contactNum, address, birthday, password);
+		else
+			JOptionPane.showMessageDialog(null, "Password Must Match!(Temporary Prompt)");
 	}
-	
-	
 }

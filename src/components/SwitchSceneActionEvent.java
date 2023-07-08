@@ -9,7 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class SwitchScene {
+public class SwitchSceneActionEvent {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;

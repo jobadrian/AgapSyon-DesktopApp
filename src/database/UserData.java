@@ -18,7 +18,6 @@ public class UserData {
 			statement.executeUpdate(sql);
 			JOptionPane.showMessageDialog(null, "Sign Up Successful!(Temporary Prompt)");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

@@ -29,9 +29,9 @@
       <AnchorPane layoutX="353.0" layoutY="83.0" prefHeight="331.0" prefWidth="294.0" style="-fx-background-color: #E6E6E6;">
          <children>
             <Label layoutX="27.0" layoutY="32.0" prefHeight="17.0" prefWidth="237.0" text="Username or Contact Number" />
-            <TextField focusTraversable="false" layoutX="27.0" layoutY="56.0" prefHeight="36.0" prefWidth="237.0" />
+            <TextField fx:id="txtContactNo" focusTraversable="false" layoutX="27.0" layoutY="56.0" prefHeight="36.0" prefWidth="237.0" />
             <Label layoutX="29.0" layoutY="110.0" prefHeight="17.0" prefWidth="237.0" text="Password" />
-            <PasswordField focusTraversable="false" layoutX="29.0" layoutY="131.0" prefHeight="36.0" prefWidth="237.0" />
+            <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="29.0" layoutY="131.0" prefHeight="36.0" prefWidth="237.0" />
             <Button focusTraversable="false" layoutX="29.0" layoutY="189.0" mnemonicParsing="false" onAction="#switchToUserDashboard" prefHeight="36.0" prefWidth="237.0" style="-fx-background-color: #709BCD;" text="Login">
                <effect>
                   <DropShadow>
