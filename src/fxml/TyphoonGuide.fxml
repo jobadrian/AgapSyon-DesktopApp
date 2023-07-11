@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right, #FFEDCC, #BFCFFF);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HotlinesC">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to right, #FFEDCC, #BFCFFF);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TyphoonGuideC">
    <children>
       <ImageView fitHeight="110.0" fitWidth="127.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Label layoutX="116.0" layoutY="48.0" prefHeight="37.0" prefWidth="330.0" text="Hotlines">
+      <Label layoutX="116.0" layoutY="48.0" prefHeight="37.0" prefWidth="330.0" text="Guides">
          <font>
             <Font name="Tahoma Bold" size="20.0" />
          </font>
@@ -67,12 +67,25 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <AnchorPane layoutX="95.0" layoutY="123.0" prefHeight="314.0" prefWidth="559.0" style="-fx-background-color: #D2E6D7;">
+      <AnchorPane layoutX="91.0" layoutY="102.0" prefHeight="363.0" prefWidth="566.0" style="-fx-background-color: #D2E6D7;">
          <children>
-            <ImageView fitHeight="299.0" fitWidth="555.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="292.0" fitWidth="569.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../assets/hotlines.png" />
+                  <Image url="@../assets/Guides/typhoon_guide.png" />
                </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="9.0" prefHeight="37.0" prefWidth="570.0" text="Typhoon Preraredness" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="530.0" layoutY="7.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Menu/exit_icon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
          </children>
       </AnchorPane>

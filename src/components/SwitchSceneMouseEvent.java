@@ -18,7 +18,7 @@ public class SwitchSceneMouseEvent {
         root = FXMLLoader.load(getClass().getResource(temp));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
-        stage.setTitle(title);
+        stage.setTitle(title +" Section");
         stage.setScene(scene);
         stage.show();
     }
