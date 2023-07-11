@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Label layoutX="116.0" layoutY="48.0" prefHeight="37.0" prefWidth="330.0" text="Hello!">
+      <Label layoutX="116.0" layoutY="48.0" prefHeight="37.0" prefWidth="330.0" text="Hotlines">
          <font>
             <Font name="Tahoma Bold" size="20.0" />
          </font>
@@ -67,5 +67,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+      <AnchorPane layoutX="95.0" layoutY="123.0" prefHeight="314.0" prefWidth="559.0" style="-fx-background-color: #D2E6D7;">
+         <children>
+            <ImageView fitHeight="299.0" fitWidth="555.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/hotlines.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

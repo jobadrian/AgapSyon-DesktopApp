@@ -21,7 +21,7 @@ public class UserSignupC {
 		insertData();
 		
 		if(password.equals(passwordConfirm))
-			goTo.switchScene(event, "/fxml/UserSignin.fxml","User Signin Section");
+			goTo.switchScene(event, "/fxml/UserSignin.fxml","User Signin");
 	}
 	
 	public void insertData() {
