@@ -4,10 +4,12 @@ import java.io.IOException;
 
 import javax.swing.JOptionPane;
 
+import components.CurrentUser;
 import components.SwitchSceneActionEvent;
 import database.UserSignin;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class UserSigninC {
@@ -31,4 +33,6 @@ public class UserSigninC {
 		else
 			JOptionPane.showMessageDialog(null, "Incorrect Password!(Temporary Prompt)");
 	}
+	
+	
 }

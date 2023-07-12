@@ -54,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Label layoutX="116.0" layoutY="48.0" prefHeight="37.0" prefWidth="330.0" text="Hello!">
+      <Label fx:id="lblGreet" layoutX="116.0" layoutY="48.0" prefHeight="37.0" prefWidth="330.0" text="Hello!">
          <font>
             <Font name="Tahoma Bold" size="20.0" />
          </font>
@@ -66,6 +66,68 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+      </ImageView>
+      <AnchorPane layoutX="81.0" layoutY="137.0" prefHeight="78.0" prefWidth="589.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lblDate" layoutX="15.0" layoutY="24.0" prefHeight="37.0" prefWidth="205.0" text="July 12, 2023" textFill="#d4bfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTemperature" layoutX="273.0" layoutY="42.0" prefHeight="37.0" prefWidth="63.0" text="25°C" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="236.0" layoutY="7.0" prefHeight="37.0" prefWidth="195.0" text="Temperature" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCondition" layoutX="516.0" layoutY="49.0" prefHeight="37.0" prefWidth="63.0" text="Cloudy" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="81.0" layoutY="267.0" prefHeight="110.0" prefWidth="589.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="13.0" layoutY="12.0" prefHeight="37.0" prefWidth="167.0" text="Precipitation" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="446.0" layoutY="14.0" prefHeight="37.0" prefWidth="129.0" text="Halumigmig" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="14.0" prefHeight="37.0" prefWidth="83.0" text="Hangin" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrecipitation" alignment="CENTER" layoutX="24.0" layoutY="47.0" prefHeight="37.0" prefWidth="119.0" text="25°C" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHangin" alignment="CENTER" layoutX="224.0" layoutY="50.0" prefHeight="37.0" prefWidth="147.0" text="25°C" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHalumigmig" alignment="CENTER" layoutX="451.0" layoutY="50.0" prefHeight="37.0" prefWidth="119.0" text="25°C" textFill="#bfcfff">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fitHeight="61.0" fitWidth="72.0" layoutX="588.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cloudy.png" />
+         </image>
       </ImageView>
    </children>
 </AnchorPane>

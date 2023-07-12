@@ -4,10 +4,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import components.CurrentUser;
+
 public class UserSignin {
 	ConnectDatabase connect = new ConnectDatabase();
 	private String sql;
-	public String contactNo, password, name;
+	public String contactNo, password;
 	
 	public void getUserData(String contactNum) {
 		connect.createConnection();
@@ -18,7 +20,7 @@ public class UserSignin {
 			while(result.next()) { 
 				contactNo = result.getString("contact_no");
 				password = result.getString("password");
-				name = result.getString("name");
+				CurrentUser.currentUser = result.getString("name");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
