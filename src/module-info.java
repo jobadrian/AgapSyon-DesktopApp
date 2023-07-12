@@ -1,6 +1,5 @@
 module AgapSyon {
 	requires javafx.controls;
-	//requires javafx.graphics;
 	requires javafx.fxml;
 	requires transitive javafx.base;
 	requires java.sql;

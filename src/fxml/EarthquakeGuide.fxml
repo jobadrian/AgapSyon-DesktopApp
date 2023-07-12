@@ -74,7 +74,7 @@
                   <Image url="@../assets/Guides/earthquake_guide.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" layoutY="9.0" prefHeight="37.0" prefWidth="570.0" text="Earthquake Preraredness" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutY="9.0" prefHeight="37.0" prefWidth="570.0" text="Earthquake Preparedness" textAlignment="CENTER">
                <font>
                   <Font name="Tahoma Bold" size="20.0" />
                </font>
