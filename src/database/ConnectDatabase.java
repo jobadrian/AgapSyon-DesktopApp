@@ -20,7 +20,7 @@ public class ConnectDatabase {
 			Class.forName("com.mysql.cj.jdbc.Driver"); 
 			connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
 			Statement statement = connection.createStatement();
-			JOptionPane.showMessageDialog(null, "Connection Success!(Temporary Prompt)");
+			//JOptionPane.showMessageDialog(null, "Connection Success!(Temporary Prompt)");
 			statement.close();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
