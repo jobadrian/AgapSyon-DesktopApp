@@ -16,7 +16,7 @@ public class UserData {
 			sql = "insert into user_info(name, contact_no, address, birthday, password)"
 			+"values("+"'"+name+"'" +","+"'"+contactNo+"'"+","+"'"+address+"'"+","+"'"+birthday+"'"+","+"'"+password+"'"+")";
 			statement.executeUpdate(sql);
-			JOptionPane.showMessageDialog(null, "Sign Up Successful!(Temporary Prompt)");
+			//JOptionPane.showMessageDialog(null, "Sign Up Successful!(Temporary Prompt)");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
