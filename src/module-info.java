@@ -5,6 +5,7 @@ module AgapSyon {
 	requires java.sql;
 	requires java.desktop;
 	requires transitive javafx.graphics;
+	requires javafx.web;
 	
 	opens main to javafx.graphics, javafx.fxml;
 	
