@@ -1,2 +1,2 @@
 # AgapSyon
-Ongoing development might add later
+Postponed Development
