@@ -33,6 +33,7 @@ public class MapC implements Initializable{
 		location.getItems().addAll(evacuationCenter);
 		location.setOnAction(this::getLocation);
 		engine = webView.getEngine();
+		engine.load("https://www.google.com/maps/place/160,+Caloocan,+Metro+Manila/@14.6802314,120.9973871,16z/data=!3m1!4b1!4m6!3m5!1s0x3397b6b0837e5d17:0x3614a95dcb16522d!8m2!3d14.6815796!4d121.000537!16s%2Fg%2F1td7qql0?hl=en&entry=ttu");
 	} 
 	
 	public void getLocation(ActionEvent event) {
@@ -49,28 +50,28 @@ public class MapC implements Initializable{
 		engine.load(homePage);
 	}
     
-    public void switchToUserDashboard(MouseEvent event) throws IOException {
-        goTo.switchScene(event, "/fxml/UserDashboard.fxml","User Dashboard");
-    }
-    
-    public void switchToSafety(MouseEvent event) throws IOException {
-        goTo.switchScene(event, "/fxml/Safety.fxml","Safety Status");
-    }
-    
-    public void switchToGuides(MouseEvent event) throws IOException {
-        goTo.switchScene(event, "/fxml/Guides.fxml","Guides");
-    }
-    
-    public void switchToHotlines(MouseEvent event) throws IOException {
-        goTo.switchScene(event, "/fxml/Hotlines.fxml","Hotlines");
-    }
-    
-    public void switchToMaps(MouseEvent event) throws IOException {
-        goTo.switchScene(event, "/fxml/Maps.fxml","Maps of Evaquation Centre");
-    }
-    
-    //This is temporary might add confirmation later
-    public void logout(MouseEvent event) throws IOException {
-        goTo.switchScene(event, "/fxml/Main.fxml","Home");
-    }
+	 public void switchToUserDashboard(MouseEvent event) throws IOException {
+	        goTo.switchScene(event, "/fxml/UserDashboard.fxml","User Dashboard");
+	    }
+	    
+	    public void switchToSafety(MouseEvent event) throws IOException {
+	        goTo.switchScene(event, "/fxml/Safety.fxml","Safety Status");
+	    }
+	    
+	    public void switchToGuides(MouseEvent event) throws IOException {
+	        goTo.switchScene(event, "/fxml/Guides.fxml","Guides");
+	    }
+	    
+	    public void switchToHotlines(MouseEvent event) throws IOException {
+	        goTo.switchScene(event, "/fxml/Hotlines.fxml","Hotlines");
+	    }
+	    
+	    public void switchToMaps(MouseEvent event) throws IOException {
+	        goTo.switchScene(event, "/fxml/Maps.fxml","Maps of Evaquation Centre");
+	    }
+	    
+	    //This is temporary might add confirmation later
+	    public void logout(MouseEvent event) throws IOException {
+	        goTo.switchScene(event, "/fxml/Main.fxml","Home");
+	    }
 }
