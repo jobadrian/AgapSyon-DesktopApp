@@ -1,5 +1,7 @@
 # AgapSyon-DesktopApp
 
+![Agapsyon](./src/assets/ss.png)
+
 ## About the Project
 
 "AgapSyon: Paghanda at Pag-aksyon sa mga Sakuna" is a Java-based desktop application that addresses the Philippines' lack of resources in managing disaster readiness and disaster response. Given the country's vulnerability to natural calamities, such as floods, typhoons, earthquakes, fire, volcanic eruptions, and landslides, AgapSyon aims to provide essential features like daily weather updates, guidelines for disaster preparedness, maps of evacuation centers, emergency hotlines, and a Report feature for users to submit incident reports.
